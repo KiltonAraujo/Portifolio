@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Oregano&family=My+Soul&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    background-color: #FAF1E3;
+    color: #555555;
+}
+main{
+    padding-left: 11em;
+    padding-right: 11em;
+    margin: 0;
+}
+
+a{
+    color: #555555;
+    text-decoration: none;
+}
+
+#home section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100%;
+    margin: 0;
+}
+
+#home section h1 {
+    font-size: 130px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 50px;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding-bottom: 30px;
+}
+
+#home section div h1 span {
+    color: #FF7829;
+    font-family: 'My Soul', cursive;
+    padding-right: 20px;
+    font-size: 150px;
+}
+
+#home section div p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    margin-bottom: -20px;
+    padding: 0;
+    font-size: 24px;
+}
+
+#home .section-about{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    max-width: 800px;
+    min-width: 100%;
+    gap: 50px;
+    
+}
+
+#home .section-about h2 {
+    font-family: 'Oregano', cursive;
+    font-weight: 600;
+    text-align: left;
+    font-size: 62px;
+    margin: 0;
+}
+
+#home .section-about h1{
+    color: #FF7829;
+    font-family: 'Oregano', cursive;
+    font-weight: 600;
+    text-align: left;
+    font-size: 87.16px;
+    padding-bottom: 0.2em;
+}
+
+#home .section-about p{
+    font-size: 20px;
+    color: #767471;
+    line-height: 32px;
+    margin: 0;
+    max-width: 915px;
+}
+
+#home .section-about p span{
+    color: #FF7829;
+}
+
+#home .section-about ol, #home .section-about ol li{
+    list-style-type: none;
+    padding: 0;
+}
+
+#home .section-about ol li a img{
+    padding-right: 10px;
+}
+
+#home .section-about .container nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2em;
+}
+
+#home .section-about .container nav a{
+    font-family: 'Oregano', cursive;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #767471;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#home .section-about .container{
+    height: 744.75px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
