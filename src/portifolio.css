@@ -6,16 +6,19 @@ body {
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     background-color: #FAF1E3;
-    color: #555555;
+    color: #767471;
 }
 main{
     padding-left: 11em;
     padding-right: 11em;
     margin: 0;
+    height: fit-content;
+    max-width: 100vw;
+    box-sizing: border-box
 }
 
 a{
-    color: #555555;
+    color: #767471;
     text-decoration: none;
 }
 
@@ -57,11 +60,12 @@ a{
 #home .section-about{
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
     justify-content: space-between;
     max-width: 800px;
     min-width: 100%;
     gap: 50px;
+    height: fit-content;
+    margin-top: 8em;
     
 }
 
@@ -97,6 +101,16 @@ a{
 #home .section-about ol, #home .section-about ol li{
     list-style-type: none;
     padding: 0;
+    margin: 0;
+    border: none;
+}
+
+#home .section-about ol li a:hover {
+    border-bottom: 2px solid #FF7829;
+    color: #FF7829;
+    transition: all 0.1s ease-in-out;
+    text-decoration: none;
+    border: none;
 }
 
 #home .section-about ol li a img{
@@ -107,22 +121,102 @@ a{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 2em;
 }
 
-#home .section-about .container nav a{
+#home .section-about .container nav a, header nav a{
     font-family: 'Oregano', cursive;
     font-size: 20px;
-    font-weight: 600;
-    margin-bottom: 10px;
+    font-weight: 400;
     border-bottom: 2px solid #767471;
     padding-left: 10px;
     padding-right: 10px;
 }
+
+#home .section-about .container nav a:hover, header nav a:hover{
+    border-bottom: 2px solid #FF7829;
+    color: #FF7829;
+    transition: all 0.1s ease-in-out;
+}
+
+
 
 #home .section-about .container{
     height: 744.75px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+
+
+
+
+
+
+
+#projects header{
+    position: absolute;
+    width: 100%;
+    padding: 1em 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    padding-left: 11em;
+    padding-right: 11em;
+    margin: 0;
+    height: fit-content;
+    max-width: 100vw;
+    box-sizing: border-box
+}
+
+#projects header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4em;
+    background-color: transparent;
+}
+
+#projects header nav a{
+    color: white;
+    border-color: white;
+}
+
+#projects header h1{
+    font-family: 'Oregano', cursive;
+    font-size: 32px;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+#projects .section-projects{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100%;
+    margin: 0;
+    background-color: #FF7829;
+    padding-left: 11em;
+    padding-right: 11em;
+    margin: 0;
+    height: fit-content;
+    max-width: 100vw;
+    box-sizing: border-box
+}
+
+#projects .section-projects ol li{
+    color: white;
+}
+
+#projects {
+    padding: 0;
+    margin: 0;
+    height: fit-content;
+    max-width: 100vw;
+    box-sizing: border-box
 }
