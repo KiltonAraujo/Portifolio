@@ -402,6 +402,8 @@ ol{
     background: #F65C5C;
 }
 
+
+
 #projects #iformandos h1 {
     color: #52AF57;
     font-size: 60px;
@@ -422,4 +424,27 @@ ol{
 #projects #iformandos header .projects-links a:nth-child(2) {
     color: #ffffff;
     background: #52AF57;
+}
+
+
+#projects #celebralize h1 {
+    color: #7ECADB;
+    font-size: 60px;
+
+}
+
+#projects #celebralize h2 {
+    color: #7ECADB;
+    font-weight: 400;
+}
+
+
+#projects #celebralize header .projects-links a:nth-child(1) {
+    color: #7ECADB;
+    background: #ffffff;
+}
+
+#projects #celebralize header .projects-links a:nth-child(2) {
+    color: #ffffff;
+    background: #7ECADB;
 }
