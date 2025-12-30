@@ -8,7 +8,7 @@
 
     <body>
         <main id="projects">
-            <header class="visible">
+            <header>
                 <h1>Kilton J. Araújo</h1>
                 <nav>
                     <a href="index.html">Home</a>
@@ -17,7 +17,7 @@
                     <a href="about.html">About me</a>
                 </nav>
             </header>
-            <section class="section-projects visible">
+            <section class="section-projects ">
                 <h1>Projetos</h1>
                 <ol>
                     <div>
@@ -28,14 +28,14 @@
                     </div>
 
                     <div>
-                        <li>Exemplo</li>
-                        <li>Exemplo</li>
-                        <li>Exemplo</li>
-                        <li>Exemplo</li>
+                        <li><a href="#">Exemplo</a></li>
+                        <li><a href="#">Exemplo</a></li>
+                        <li><a href="#">Exemplo</a></li>
+                        <li><a href="#">Exemplo</a></li>
                     </div>      
                 </ol>
             </section>
-            <section id="diretoriaTI" class="hidden">
+            <section id="diretoriaTI">
                 <header>
                     <div>
                         <h1>Diretoria de TI</h1>
@@ -50,11 +50,13 @@
                 <ol class="description">
                     <li>
                         <h2>Tecnologias</h2>
-                        <ol>
-                            <li>HTML5</li>
-                            <li>CSS3</li>
-                            <li>JavaScript</li>
-                        </ol>
+                        <div>
+                            <ol>
+                                <li>HTML5</li>
+                                <li>CSS3</li>
+                                <li>JavaScript</li>
+                            </ol>
+                        </div>
                     </li>
 
                     <li>
@@ -93,12 +95,137 @@
                     </figure>
                 </div>
             </section>
-
-            <section id="garçom" class="hidden">
+            <section id="garçom">
                 <header>
                     <div>
                         <h1>Garçom</h1>
                         <p>Plataforma para Cardápio Digital com atualizações em tempo real</p>
+                    </div>
+                    <div class="projects-links">
+                        <a target="_blank" href="#">Deploy</a>
+                        <a target="_blank" href="https://github.com/PI-InfoWeb-CNAT/garcom">Github</a>
+                    </div>
+                </header>
+            
+                <ol class="description">
+                    <li>
+                        <h2>Tecnologias</h2>
+                        <div>
+                            <ol>
+                                <li>React</li>
+                                <li>Typescript</li>
+                                <li>TailwindCSS</li>
+                            </ol>
+                            <ol>
+                                <li>Node JS</li>
+                                <li>PostgreSQL</li>
+                                <li>Vercel</li>
+                            </ol>
+                        </div>
+                    </li>
+            
+                    <li>
+                        <h2>Problema</h2>
+                        <p>Restaurantes que desejam digitalizar seus cardápios enfrentam soluções caras, difíceis de integrar e sem atualização em
+                        tempo real. A falta de um sistema acessível e personalizável impede que eles ofereçam ao cliente uma experiência moderna
+                        e dinâmica.</p>
+                    </li>
+            
+                    <li>
+                        <h2>Papel</h2>
+                        <p>Fullstack Developer • UX/UI Designer</p>
+            
+                        <div>
+                            <h2>Diferencial</h2>
+                            <p>Status do pedido em tempo real, Arquitetura escalável e design moderno.</p>
+                        </div>
+                    </li>
+            
+                    <li>
+                        <h2>Solução</h2>
+                        <p>Participei do desenvolvimento de uma plataforma full stack que funciona como um cardápio digital dinâmico, permitindo
+                        que restaurantes atualizem informações, preços e disponibilidade de pratos em tempo real. O sistema torna o atendimento
+                        mais rápido, reduzindo erros de comunicação e trazendo uma solução acessível para digitalização de pequenos e médios
+                        estabelecimentos.</p>
+                    </li>
+            
+                </ol>
+            
+                <div class="layout">
+                    <h1>Layout</h1>
+                    <figure>
+                        <img src="src/assets/home-garçom.svg" alt="Página inicial">
+                        <img src="src/assets/pag2-garçom.svg" alt="Página de trabalhos">
+                    </figure>
+                </div>
+            </section>
+            <section id="iformandos">
+                <header>
+                    <div>
+                        <h1>Iformandos</h1>
+                        <p>Rede Social para Egressos com Memórias Digitais e Placas Virtuais</p>
+                    </div>
+                    <div class="projects-links">
+                        <a target="_blank" href="#">Deploy</a>
+                        <a target="_blank" href="https://github.com/PI-InfoWeb-CNAT/2024-rede-social-spfv">Github</a>
+                    </div>
+                </header>
+            
+                <ol class="description">
+                    <li>
+                        <h2>Tecnologias</h2>
+                        <div>
+                            <ol>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>Python</li>
+                            </ol>
+                            <ol>
+                                <li>JavaScript</li>
+                                <li>Django</li>
+                                <li>MySQL</li>
+                            </ol>
+                        </div>
+                    </li>
+            
+                    <li>
+                        <h2>Problema</h2>
+                        <p>Escolas acumulam placas físicas de formatura, gastando espaço e dinheiro, e os alunos perdem o contato após a conclusão.</p>
+                    </li>
+            
+                    <li>
+                        <h2>Papel</h2>
+                        <p>Fullstack Developer • UX/UI Designer</p>
+            
+                        <div>
+                            <h2>Diferencial</h2>
+                            <p>Solução moderna para um problema comum em instituições de ensino.</p>
+                        </div>
+                    </li>
+            
+                    <li>
+                        <h2>Solução</h2>
+                        <p>Participei do desenvolvimento de uma rede social intuitiva voltada para egressos, permitindo que alunos mantenham
+                        contato após a formatura. A plataforma digitaliza placas de formatura, reduzindo o acúmulo físico nas escolas, e oferece
+                        um espaço centralizado onde turmas podem registrar fotos, histórias e interações, preservando vínculos e facilitando o
+                        acesso às recordações acadêmicas.</p>
+                    </li>
+            
+                </ol>
+            
+                <div class="layout">
+                    <h1>Layout</h1>
+                    <figure>
+                        <img src="src/assets/home.svg" alt="Página inicial">
+                        <img src="src/assets/pag2.svg" alt="Página de trabalhos">
+                    </figure>
+                </div>
+            </section>
+            <section id="Celebralize">
+                <header>
+                    <div>
+                        <h1>Celebralize</h1>
+                        <p>Sistema simples para organizar encontros entre amigos</p>
                     </div>
                     <div class="projects-links">
                         <a target="_blank" href="#">Deploy</a>
@@ -109,38 +236,42 @@
                 <ol class="description">
                     <li>
                         <h2>Tecnologias</h2>
-                        <ol>
-                            <li>HTML5</li>
-                            <li>CSS3</li>
-                            <li>JavaScript</li>
-                        </ol>
+                        <div>
+                            <ol>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>PHP</li>
+                            </ol>
+                            <ol>
+                                <li>Vercel</li>
+                            </ol>
+                        </div>
                     </li>
             
                     <li>
                         <h2>Problema</h2>
-                        <p>A comunidade escolar tinha dificuldade de encontrar tutoriais, informações e suporte da equipe de TI,
-                            causando
-                            atrasos e
-                            dependência do atendimento presencial.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                        aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
                     </li>
             
                     <li>
                         <h2>Papel</h2>
-                        <p>Frontend Developer • UX/UI Designer</p>
+                        <p>UX/UI Designer</p>
             
                         <div>
                             <h2>Diferencial</h2>
-                            <p>Sistema de busca inteligente sem backend.</p>
+                            <p>Projeto leve, direto e esteticamente bem resolvido.</p>
                         </div>
                     </li>
             
                     <li>
                         <h2>Solução</h2>
-                        <p>Criei um site leve e responsivo para é facilitar a comunicação com o público e atender às necessidades
-                            tecnológicas dos
-                            docentes. Ele oferece tutoriais simples e didáticos, promovendo um ambiente acadêmico mais eficiente e
-                            solucionando
-                            dúvidas relacionadas ao uso de ferramentas tecnológicas essenciais.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                        aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
                     </li>
             
                 </ol>
@@ -148,8 +279,8 @@
                 <div class="layout">
                     <h1>Layout</h1>
                     <figure>
-                        <img src="src/assets/home-DiretoriaTI.svg" alt="Página inicial">
-                        <img src="src/assets/pag2-DiretoriaTI.svg" alt="Página de tutoriais">
+                        <img src="src/assets/homesvg" alt="Página inicial">
+                        <img src="src/assets/pag2.svg" alt="Página de trabalhos">
                     </figure>
                 </div>
             </section>
@@ -157,4 +288,3 @@
         </main>
     </body>
 </html>
-<script src="src/portifolio.js"></script>
