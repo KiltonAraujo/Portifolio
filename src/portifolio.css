@@ -39,6 +39,18 @@ a{
     text-decoration: none;
 }
 
+h1{
+    font-family: 'Oregano', cursive;
+    font-weight: 400;
+    text-align: left;
+    font-size: 60px;
+    padding-bottom: 0.2em;
+}
+
+ol{
+    list-style: none;
+}
+
 #home section{
     display: flex;
     flex-direction: column;
@@ -75,13 +87,13 @@ a{
 }
 
 #home .section-about{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    max-width: 800px;
-    min-width: 100%;
-    gap: 50px;
-
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+        max-width: 800px;
+        min-width: 100%;
+        gap: 50px;
     
 }
 
@@ -137,6 +149,7 @@ a{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 2em;
 }
 
 #home .section-about .container nav a, header nav a{
@@ -167,11 +180,9 @@ a{
 
 
 
-
-
-
 #projects header{
-    position: absolute;
+    position: fixed;
+    z-index: 10;
     width: 100%;
     padding: 1em 0;
     display: flex;
@@ -224,11 +235,22 @@ a{
     max-width: 100vw;
     box-sizing: border-box
 }
+
+#projects .section-projects h1{
+    color: white;
+
+    font-family: Oregano, cursive;
+    font-weight: 300;
+    margin-bottom: 1em;
+}
+
 #projects .section-projects ol{
     display: flex;
-    gap: 3em;
+    gap: 6em;
     flex-wrap: wrap;
     align-items: center;
+    padding: 0;
+    margin: 0;
 }
 
 #projects .section-projects ol div li{
@@ -244,4 +266,146 @@ a{
     height: fit-content;
     max-width: 100vw;
     box-sizing: border-box
+}
+
+#projects section .description{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+}
+
+#projects section header {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin: 0;
+    padding: 0;
+}
+
+#projects section ol {
+    padding: 0;
+    margin: 0;
+}
+
+#projects section header .projects-links{
+    box-sizing: border-box;
+    padding-top: 27px;
+}
+
+#projects section header .projects-links a{
+    padding: 10px 27px;
+    border-radius: 90px;
+    text-decoration: none;
+    transition: filter 0.2s ease;
+}
+
+#projects section header .projects-links a:hover{
+    filter: brightness(0.9);
+}
+
+#projects #diretoriaTI h1{
+    font-size: 60px;
+}
+
+#projects section h2{
+    font-weight: 500;
+    font-size: 30px;
+}
+#projects #diretoriaTI h1 {
+    color: #9A92FF;
+}
+
+#projects #diretoriaTI h2 {
+    color: #9A92FF;
+}
+#projects #diretoriaTI header .projects-links a:nth-child(1) {
+    color: #9A92FF;
+    background: #ffffff;
+}
+
+#projects #diretoriaTI header .projects-links a:nth-child(2){
+    color: #ffffff;
+    background: #9A92FF;
+}
+
+
+
+#projects section .description li div{
+    gap: 1em;
+}
+
+#projects section .description .item-meio{
+    grid-column: span 2;
+}
+
+#projects section{
+    background-color: #181818;
+    padding-left: 11em;
+    padding-right: 11em;
+    padding-top: 7em;
+    padding-bottom: 7em;
+    box-sizing: border-box;
+    max-width: 100vw;
+}
+
+#projects section p{
+    color: #DEDEDE;
+    font-size: 20px;
+}
+
+#projects #diretoriaTI{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    margin: 0;
+}
+
+#projects #diretoriaTI .layout{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    width: 100%;
+}
+
+
+#projects #diretoriaTI .layout figure{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 3em;
+    margin: 0;
+    padding: 0;
+}
+
+#projects #diretoriaTI .layout figure img{
+    width: 100%;
+}
+
+
+
+#projects #garçom h1 {
+    color: #F65C5C;
+    font-size: 60px;
+
+}
+
+#projects #garçom h2 {
+    color: #F65C5C;
+    font-weight: 400;
+}
+
+#projects #garçom header .projects-links a:nth-child(1) {
+    color: #F65C5C;
+    background: #ffffff;
+}
+
+#projects #garçom header .projects-links a:nth-child(2) {
+    color: #ffffff;
+    background: #F65C5C;
 }
