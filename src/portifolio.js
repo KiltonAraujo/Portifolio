@@ -66,3 +66,41 @@ document.addEventListener("DOMContentLoaded", function() {
       });
   }
 });
+
+// menu sanduíche
+document.addEventListener("DOMContentLoaded", function() {
+    const toggles = document.querySelectorAll(".menu-toggle");
+    const navs = [];
+
+    toggles.forEach((toggle) => {
+        const header = toggle.closest(".header");
+        const nav = header ? header.querySelector("nav") : null;
+
+        if (!nav) return;
+
+        navs.push({ nav, toggle });
+
+        toggle.addEventListener("click", () => {
+            const isOpen = nav.classList.toggle("is-open");
+            toggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
+        });
+
+        nav.querySelectorAll("a").forEach((link) => {
+            link.addEventListener("click", () => {
+                nav.classList.remove("is-open");
+                toggle.setAttribute("aria-expanded", "false");
+            });
+        });
+    });
+
+    document.addEventListener("click", (event) => {
+        navs.forEach(({ nav, toggle }) => {
+            const clickedInsideNav = nav.contains(event.target);
+            const clickedOnToggle = toggle.contains(event.target);
+            if (!clickedInsideNav && !clickedOnToggle && nav.classList.contains("is-open")) {
+                nav.classList.remove("is-open");
+                toggle.setAttribute("aria-expanded", "false");
+            }
+        });
+    });
+});

@@ -4,13 +4,20 @@
         <title>Projects</title>
         <link rel="stylesheet" href="src/portifolio.css">
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="src/portifolio.js" defer></script>
     </head>
 
     <body>
         <main id="projects">
-            <header class="header">
+            <header class="header has-menu">
                 <h1>Kilton J. Araújo</h1>
-                <nav>
+                <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="main-nav">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <nav id="main-nav" class="nav-links">
                     <a href="index.html">Home</a>
                     <a href="projects.html">Projetos</a>
                     <a href="branding.html">Branding & Design</a>

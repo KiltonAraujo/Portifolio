@@ -15,7 +15,7 @@
     --celebralize: #7ECADB;
 
     /* espaçamento */
-    --padding-lateral: 0 11em;
+    --padding-lateral: 0 9em;
 }
 
 body {
@@ -193,13 +193,14 @@ main .header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: transparent;
-    position: absolute;
+    background-color: var(--laranja);
+    padding-top: 1.3em;
     padding: var(--padding-lateral);
     margin: 0;
     height: fit-content;
     max-width: 100vw;
-    box-sizing: border-box
+    box-sizing: border-box;
+    position: relative;
 }
 
 main .header nav {
@@ -222,6 +223,33 @@ main .header h1{
     margin: 0;
     padding: 0;
     color: white;
+}
+
+.header .menu-toggle{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    width: 54px;
+    height: 54px;
+    border-radius: 12px;
+    border: 1px solid currentColor;
+    background: rgba(255, 255, 255, 0.08);
+    color: inherit;
+    cursor: pointer;
+    transition: transform 0.12s ease, filter 0.12s ease;
+}
+
+.header .menu-toggle:hover{
+    transform: translateY(-1px);
+    filter: brightness(1.05);
+}
+
+.header .menu-toggle span{
+    display: block;
+    width: 30px;
+    height: 2px;
+    background: currentColor;
 }
 
 #projects .section-projects{
@@ -493,14 +521,26 @@ main .header h1{
 
 /*       About-me        */
 
+#about-me ol{
+    padding: 0;
+    margin: 0;
+}
+
 #about-me .header {
     padding-left: 0;
     padding-right: 0;
+    padding-top: 1.3em;
 }
 
 #about-me .header nav a {
     color: var(--cinza) ;
     border-color: var(--cinza);
+    transition: all 0.1s ease-in-out;
+}
+
+#about-me .header nav a:hover {
+    border-color: var(--laranja);
+    color: var(--laranja);
 }
 
 #about-me .header h1 {
@@ -512,99 +552,124 @@ main .header h1{
     color: var(--laranja);
 }
 
+#about-me h2{
+    font-weight: 400;
+    text-align: left;
+    color: var(--laranja);
+    font-size: 35px;
+    margin: 0;
+    margin-bottom: 0.3em;
+}
+
+#about-me p, li, h3 {
+    padding: 0;
+    margin: 0;
+}
+
+
 #about-me section{
     min-height: 100vh;
-    padding-top: 3em;
+    padding-bottom: 5em;
 }
 
-#about-me section ol{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1.2fr;
-    grid-template-rows: auto auto auto auto;
-    gap: 40px 60px;
-    padding: 0;
-    margin: 0;
-}
-
-#about-me section ol li{
-    list-style-type: none;
-    padding: 0;
-}
-
-#about-me section ol li:nth-child(1){
-    grid-column: 1;
-    grid-row: 1;
-}
-
-#about-me section ol li:nth-child(2){
-    grid-column: 1;
-    grid-row: 2;
-}
-
-#about-me section ol li:nth-child(3){
-    grid-column: 1;
-    grid-row: 3;
-}
-
-#about-me section ol li:nth-child(4){
-    grid-column: 2;
-    grid-row: 1;
-}
-
-#about-me section ol li:nth-child(5){
-    grid-column: 2;
-    grid-row: 2;
-}
-
-#about-me section ol li:nth-child(6){
-    grid-column: 2;
-    grid-row: 3;
-}
-
-#about-me section ol li:nth-child(7){
-    grid-column: 3;
-    grid-row: 1 / -1;
-    background-color: var(--laranja);
-    border-radius: 20px;
-    padding: 40px;
+#about-me section .about-container{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    gap: 1em;
+    max-width: 100%;
     justify-content: space-between;
-    min-height: 400px;
 }
 
-#about-me section ol li h2{
-    color: var(--laranja);
-    
-}
-
-#about-me section ol li div p{
-    margin: 0;
-    color: var(--cinza);
-}
-
-#about-me section ol li div h3 {
-    margin: 0;
-    color: var(--cinza);
-}
-
-#about-me section ol li ol{
-    margin: 0;
-    padding: 0;
+#about-me section .about-container > li{
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 1em;
+    width: 30%;
 }
 
-#about-me section ol li ol li{
-    height: fit-content;
+#about-me section .about-container #card-me{
+    border-radius: 2em;
+    background-color: var(--laranja);
+    color: white;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5em;
+    justify-content: center;
+    box-sizing: border-box;
 }
+
+#about-me section .about-container #card-me div h2{
+    color: white;
+    font-size: 24px;
+}
+
+#about-me section .about-container #card-me div p{
+    font-weight: 300;
+}
+
+#about-me section .about-container ol{
+    gap: 1.4em;
+    display: flex;
+    flex-direction: column;
+}
+
+#about-me section .about-container ol li h3, #about-me section .about-container ol li p{
+    margin:0;
+    padding: 0;
+}
+
+#about-me section .about-container .technical-skills ol{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1em;
+    padding: 0;
+    margin: 0;
+}
+
+#about-me section .about-container .languages ol{
+    gap:0.3em;
+}
+
+#about-me section #card-me-mobile{
+    display: none;
+    border-radius: 2em;
+    background-color: var(--laranja);
+    color: white;
+    padding: 2em;
+    align-items: center;
+    gap: 2.5em;
+    justify-content: start;
+    box-sizing: border-box;
+    margin-bottom: 3em;
+}
+
+#about-me section #card-me-mobile div h2{
+    color: white;
+}
+#about-me section #card-me-mobile div p {
+    font-size: 25px !important;
+}
+
+#about-me section #card-me-mobile div p {
+    margin-top: -14px;
+}
+
+#about-me .header{
+    background-color: transparent;
+}
+
+
+ 
+
 
 /*   responsividade    */
 
 @media screen and (max-width: 1200px) {
     :root {
-        --padding-lateral: 0 5em;
+        --padding-lateral: 0 3em;
     }
 
         /* home */
@@ -618,7 +683,7 @@ main .header h1{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        gap: 30px;
+        gap: 70px;
         max-height: none;
     }
     
@@ -626,7 +691,10 @@ main .header h1{
         align-items: center;
     }
 
-    
+    #about-me h2 Specificity{
+        font-size: 40px;
+        }
+
 
     /* projetos */
         #projects .section-projects ol div li a {
@@ -640,12 +708,12 @@ main .header h1{
 
 @media screen and (max-width: 1000px) {
     a {
-        font-size: 25px !important;
+        font-size: 37px !important;
     }
     
     p,li {
-        font-size: 30px !important;
-        line-height: 40px;
+        font-size: 37px !important;
+        line-height: 50px !important;
     }
 
     #projects .section-projects ol div li a{
@@ -653,10 +721,91 @@ main .header h1{
     }
 
     #projects section h2 {
-        font-size: 35px;
+        font-size: 42px;
     }
     #projects section .description {
         flex-direction: column;
         gap: 1em;
+    }
+
+    #home .section-about h1 {
+        font-size: 115px;
+    }
+
+    #home .section-about h2 {
+        font-size: 85px;
+    }
+
+    #about-me section #card-me-mobile{
+        display: flex;
+
+    }
+
+    #about-me section .about-container #card-me {
+        display: none;
+    }
+
+    #about-me section .about-container>li {
+        width: 47%;
+    }
+
+    #about-me section .about-container .technical-skills ol li img{
+        width: 100px;
+    }
+
+    #about-me section h3{
+        font-size: 35px;
+    }
+
+    #about-me section h2{
+        font-size: 41px;
+    }
+
+    .header.has-menu {
+        gap: 12px;
+        padding-top: 1.3em;
+    }
+
+    .header.has-menu .menu-toggle {
+        display: flex;
+        border-color: var(--laranja);
+        color: var(--laranja);
+        flex-direction: column;
+    }
+
+    .header.has-menu nav {
+        position: absolute;
+        top: calc(100% + 12px);
+        right: 0;
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.75em;
+        padding: 1em 1.25em;
+        background: #ffffff;
+        border: 1px solid var(--cinza-muito-claro);
+        border-radius: 16px;
+        box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+        min-width: 230px;
+        z-index: 20;
+    }
+
+    .header.has-menu nav.is-open {
+        display: flex;
+    }
+
+    .header.has-menu nav a {
+        color: var(--cinza) !important;
+        border: none;
+        font-size: 22px !important;
+    }
+
+    .header.has-menu nav a:hover {
+        border: none;
+        color: var(--laranja) !important;
+    }
+
+    #projects .header.has-menu .menu-toggle{
+        background-color: white;
     }
 }
